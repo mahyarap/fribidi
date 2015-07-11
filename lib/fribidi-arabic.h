@@ -1,23 +1,23 @@
 /* fribidi-arabic.h - do Arabic shaping to presentation forms
  *
  * Copyright (C) 2005  Behdad Esfahbod
- * 
+ *
  * This file is part of GNU FriBidi.
- * 
+ *
  * GNU FriBidi is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public License
  * as published by the Free Software Foundation; either version 2.1
  * of the License, or (at your option) any later version.
- * 
+ *
  * GNU FriBidi is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Lesser General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Lesser General Public License
  * along with GNU FriBidi; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
- * 
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301 USA
+ *
  * For licensing issues, contact <license@farsiweb.info> or write to
  * Sharif FarsiWeb, Inc., PO Box 13445-389, Tehran, Iran.
  */
@@ -25,7 +25,9 @@
  * $Author: behdad $
  * $Date: 2005-11-03 01:39:01 $
  * $Revision: 1.1 $
- * $Source: /home/behdad/src/fdo/fribidi/togit/git/../fribidi/fribidi2/lib/fribidi-arabic.h,v $
+ * $Source:
+ * /home/behdad/src/fdo/fribidi/togit/git/../fribidi/fribidi2/lib/fribidi-arabic.h,v
+ *$
  *
  * Author(s):
  *   Behdad Esfahbod, 2005
@@ -41,7 +43,6 @@
 #include "fribidi-joining.h"
 
 #include "fribidi-begindecls.h"
-
 
 #define fribidi_shape_arabic FRIBIDI_NAMESPACE(shape_arabic)
 /* fribidi_shape_arabic - do Arabic shaping
@@ -64,20 +65,19 @@
  * other means for doing Arabic shaping.  The set of extra flags that enable
  * this level of Arabic support has a shortcut named FRIBIDI_FLAGS_ARABIC.
  */
-FRIBIDI_ENTRY void
-fribidi_shape_arabic (
-  FriBidiFlags flags, /* shaping flags */
-  const FriBidiLevel *embedding_levels,
-  const FriBidiStrIndex len,	/* input string length */
-  FriBidiArabicProp *ar_props, /* input/output Arabic properties as
-				* computed by fribidi_join_arabic */
-  FriBidiChar *str		/* string to shape */
-);
+FRIBIDI_ENTRY void fribidi_shape_arabic(
+    FriBidiFlags flags, /* shaping flags */
+    const FriBidiLevel *embedding_levels,
+    const FriBidiStrIndex len,   /* input string length */
+    FriBidiArabicProp *ar_props, /* input/output Arabic properties as
+				  * computed by fribidi_join_arabic */
+    FriBidiChar *str /* string to shape */
+    );
 
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_ARABIC_H */
-/* Editor directions:
+       /* Editor directions:
  * Local Variables:
  *   mode: c
  *   c-basic-offset: 2
