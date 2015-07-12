@@ -113,7 +113,3 @@ char fribidi_char_from_bidi_type(
 }
 
 #endif /* DEBUG */
-
-/* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

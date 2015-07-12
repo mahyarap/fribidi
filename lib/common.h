@@ -190,6 +190,3 @@
 #include "debug.h"
 
 #endif /* !_COMMON_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

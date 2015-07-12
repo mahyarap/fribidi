@@ -59,6 +59,3 @@ FriBidiStrIndex fribidi_unicode_to_utf8(const FriBidiChar *us,
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_CHAR_SETS_UTF8_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

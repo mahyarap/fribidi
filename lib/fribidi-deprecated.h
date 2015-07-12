@@ -226,6 +226,3 @@ FRIBIDI_ENTRY FriBidiLevel fribidi_log2vis(
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_DEPRECATED_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

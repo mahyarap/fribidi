@@ -93,7 +93,3 @@ const char *fribidi_version_info =
     "the terms of the GNU Lesser General Public License.\n"
     "For more information about these matters, see the file named COPYING.\n\n"
     "Written by Behdad Esfahbod and Dov Grobgeld.\n";
-
-/* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

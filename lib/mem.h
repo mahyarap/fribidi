@@ -81,6 +81,3 @@ void fribidi_mem_chunk_destroy(FriBidiMemChunk *mem_chunk) FRIBIDI_GNUC_HIDDEN;
 #include <fribidi-enddecls.h>
 
 #endif /* !_MEM_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

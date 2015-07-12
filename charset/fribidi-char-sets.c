@@ -186,6 +186,3 @@ FRIBIDI_ENTRY const char *fribidi_char_set_desc(
 	return char_sets[char_set].desc ? char_sets[char_set].desc() : NULL;
 }
 
-/* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

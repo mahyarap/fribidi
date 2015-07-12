@@ -121,6 +121,3 @@ FriBidiStrIndex fribidi_unicode_to_utf8(
 	return (t - s);
 }
 
-/* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

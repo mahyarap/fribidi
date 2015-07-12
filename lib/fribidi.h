@@ -64,6 +64,3 @@ extern const char *fribidi_version_info;
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

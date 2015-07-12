@@ -103,6 +103,3 @@ FRIBIDI_ENTRY int fribidi_set_debug(int state /* new state to set */
 				    );
 
 #endif /* !_FRIBIDI_COMMON_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

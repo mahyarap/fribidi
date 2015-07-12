@@ -73,6 +73,3 @@ FRIBIDI_ENTRY void fribidi_shape(
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_SHAPE_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

@@ -690,6 +690,3 @@ int main(int argc, char *argv[])
 	return exit_val;
 }
 
-/* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

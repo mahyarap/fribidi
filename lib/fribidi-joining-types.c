@@ -104,7 +104,3 @@ char fribidi_char_from_joining_type(
 }
 
 #endif /* DEBUG */
-
-/* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

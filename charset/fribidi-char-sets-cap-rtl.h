@@ -62,6 +62,3 @@ FriBidiStrIndex fribidi_unicode_to_cap_rtl(const FriBidiChar *us,
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_CHAR_SETS_CAP_RTL_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

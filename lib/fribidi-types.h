@@ -157,6 +157,3 @@ typedef FRIBIDI_STR_INDEX FriBidiStrIndex;
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_TYPES_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

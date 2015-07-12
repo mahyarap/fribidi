@@ -149,6 +149,3 @@ FRIBIDI_ENTRY FriBidiLevel fribidi_reorder_line(
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_BIDI_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

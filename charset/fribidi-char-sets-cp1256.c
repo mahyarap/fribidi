@@ -214,6 +214,3 @@ char fribidi_unicode_to_cp1256_c(
 		}
 }
 
-/* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

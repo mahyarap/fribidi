@@ -163,13 +163,3 @@ FRIBIDI_ENTRY void fribidi_shape_arabic(
 		DO_SHAPING(FRIBIDI_GET_ARABIC_SHAPE_NSM, len, ar_props, str);
 	}
 }
-
-/* Editor directions:
- * Local Variables:
- *   mode: c
- *   c-basic-offset: 2
- *   indent-tabs-mode: t
- *   tab-width: 8
- * End:
- * vim: textwidth=78: autoindent: cindent: shiftwidth=2: tabstop=8:
- */

@@ -249,6 +249,3 @@ fribidi_get_joining_type_name(FriBidiJoiningType j /* input joining type */
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_JOINING_TYPES_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

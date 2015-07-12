@@ -78,6 +78,3 @@ FRIBIDI_ENTRY void fribidi_join_arabic(
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_JOINING_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

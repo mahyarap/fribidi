@@ -1002,6 +1002,3 @@ out:
 	return status ? max_level + 1 : 0;
 }
 
-/* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

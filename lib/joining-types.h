@@ -56,6 +56,3 @@ char fribidi_char_from_joining_type(
 #include <fribidi-enddecls.h>
 
 #endif /* !_JOINING_TYPES_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

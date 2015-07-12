@@ -383,6 +383,3 @@ fribidi_get_bidi_type_name(FriBidiCharType t /* input bidi type */
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_BIDI_TYPES_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

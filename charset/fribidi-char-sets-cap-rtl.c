@@ -328,6 +328,3 @@ const char *fribidi_char_set_desc_cap_rtl(void)
 	return s;
 }
 
-/* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

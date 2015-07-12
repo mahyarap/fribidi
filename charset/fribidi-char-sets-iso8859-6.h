@@ -57,6 +57,3 @@ char fribidi_unicode_to_iso8859_6_c(FriBidiChar uch);
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_CHAR_SETS_ISO8859_6_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

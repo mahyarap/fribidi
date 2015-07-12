@@ -72,6 +72,3 @@ typedef fribidi_uint32 FriBidiFlags;
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_FLAGS_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

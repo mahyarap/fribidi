@@ -100,6 +100,3 @@ extern const char *fribidi_unicode_version;
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_UNICODE_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

@@ -195,6 +195,3 @@ FRIBIDI_ENTRY void fribidi_join_arabic(
 	DBG("leaving fribidi_join_arabic");
 }
 
-/* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

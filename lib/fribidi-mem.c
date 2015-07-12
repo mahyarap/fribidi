@@ -133,7 +133,3 @@ void fribidi_mem_chunk_destroy(
 
 #endif /* !USE_SIMPLE_MALLOC */
 #endif /* !FRIBIDI_USE_GLIB */
-
-/* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

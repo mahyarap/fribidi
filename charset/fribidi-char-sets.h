@@ -105,6 +105,3 @@ FRIBIDI_ENTRY const char *fribidi_char_set_desc(FriBidiCharSet char_set);
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_CHAR_SETS_H */
-       /* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

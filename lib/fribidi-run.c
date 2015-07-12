@@ -343,7 +343,3 @@ void fribidi_validate_run_list(FriBidiRun *run_list /* input run list */
 }
 
 #endif /* !DEBUG */
-
-/* Editor directions:
- * vim:textwidth=78:tabstop=8:shiftwidth=2:autoindent:cindent
- */

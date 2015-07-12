@@ -77,12 +77,3 @@ FRIBIDI_ENTRY void fribidi_shape_arabic(
 #include "fribidi-enddecls.h"
 
 #endif /* !_FRIBIDI_ARABIC_H */
-       /* Editor directions:
- * Local Variables:
- *   mode: c
- *   c-basic-offset: 2
- *   indent-tabs-mode: t
- *   tab-width: 8
- * End:
- * vim: textwidth=78: autoindent: cindent: shiftwidth=2: tabstop=8:
- */
