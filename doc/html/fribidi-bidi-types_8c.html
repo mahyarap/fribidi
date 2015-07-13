@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,8 +97,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Character bidi types.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;common.h&quot;</code><br/>
-<code>#include &lt;fribidi-bidi-types.h&gt;</code><br/>
-<code>#include &quot;bidi-types.h&quot;</code><br/>
+<code>#include &lt;<a class="el" href="fribidi-bidi-types_8h_source.html">fribidi-bidi-types.h</a>&gt;</code><br/>
+<code>#include &quot;<a class="el" href="bidi-types_8h_source.html">bidi-types.h</a>&quot;</code><br/>
 <code>#include &quot;fribidi-bidi-types-list.h&quot;</code><br/>
 <code>#include &quot;bidi-type.tab.i&quot;</code><br/>
 </div><table class="memberdecls">
@@ -124,14 +125,14 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab2e45f791660045f95d48aec635ffe38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2e45f791660045f95d48aec635ffe38"></a>
-FRIBIDI_ENTRY FriBidiCharType&#160;</td><td class="memItemRight" valign="bottom"><b>fribidi_get_bidi_type</b> (FriBidiChar ch)</td></tr>
+<tr class="memitem:ab2e45f791660045f95d48aec635ffe38"><td class="memItemLeft" align="right" valign="top">FRIBIDI_ENTRY FriBidiCharType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fribidi-bidi-types_8c.html#ab2e45f791660045f95d48aec635ffe38">fribidi_get_bidi_type</a> (FriBidiChar ch)</td></tr>
+<tr class="memdesc:ab2e45f791660045f95d48aec635ffe38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get character bidi type.  <a href="#ab2e45f791660045f95d48aec635ffe38">More...</a><br/></td></tr>
 <tr class="separator:ab2e45f791660045f95d48aec635ffe38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d531af77bb6a3740e494c1148274c2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d531af77bb6a3740e494c1148274c2e"></a>
-FRIBIDI_ENTRY void&#160;</td><td class="memItemRight" valign="bottom"><b>fribidi_get_bidi_types</b> (const FriBidiChar *str, const FriBidiStrIndex len, FriBidiCharType *btypes)</td></tr>
+<tr class="memitem:a6d531af77bb6a3740e494c1148274c2e"><td class="memItemLeft" align="right" valign="top">FRIBIDI_ENTRY void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fribidi-bidi-types_8c.html#a6d531af77bb6a3740e494c1148274c2e">fribidi_get_bidi_types</a> (const FriBidiChar *str, const FriBidiStrIndex len, FriBidiCharType *btypes)</td></tr>
+<tr class="memdesc:a6d531af77bb6a3740e494c1148274c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get bidi types for an string of characters.  <a href="#a6d531af77bb6a3740e494c1148274c2e">More...</a><br/></td></tr>
 <tr class="separator:a6d531af77bb6a3740e494c1148274c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a896624630608293902a59ea3377534ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a896624630608293902a59ea3377534ed"></a>
-FRIBIDI_ENTRY const char *&#160;</td><td class="memItemRight" valign="bottom"><b>fribidi_get_bidi_type_name</b> (FriBidiCharType t)</td></tr>
+<tr class="memitem:a896624630608293902a59ea3377534ed"><td class="memItemLeft" align="right" valign="top">FRIBIDI_ENTRY const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fribidi-bidi-types_8c.html#a896624630608293902a59ea3377534ed">fribidi_get_bidi_type_name</a> (FriBidiCharType t)</td></tr>
+<tr class="memdesc:a896624630608293902a59ea3377534ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get bidi type name.  <a href="#a896624630608293902a59ea3377534ed">More...</a><br/></td></tr>
 <tr class="separator:a896624630608293902a59ea3377534ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -170,10 +171,108 @@ Copyright (C) 1999,2000 Dov Grobgeld </dd></dl>
 </div><!-- fragment -->
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ab2e45f791660045f95d48aec635ffe38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FRIBIDI_ENTRY FriBidiCharType fribidi_get_bidi_type </td>
+          <td>(</td>
+          <td class="paramtype">FriBidiChar&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get character bidi type. </p>
+<p>This function returns the bidi type of a character as defined in Table 3.7 Bidirectional Character Types of the Unicode Bidirectional Algorithm available at <a href="http://www.unicode.org/reports/tr9/#Bidirectional_Character_Types,">http://www.unicode.org/reports/tr9/#Bidirectional_Character_Types,</a> using data provided in file UnicodeData.txt of the Unicode Character Database available at <a href="http://www.unicode.org/Public/UNIDATA/UnicodeData.txt">http://www.unicode.org/Public/UNIDATA/UnicodeData.txt</a>.</p>
+<p>There are a few macros defined in <a class="el" href="fribidi-bidi-types_8h.html" title="Character bidi types. ">fribidi-bidi-types.h</a> for querying a bidi type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>input character </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The bidi type of a character </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a896624630608293902a59ea3377534ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FRIBIDI_ENTRY const char* fribidi_get_bidi_type_name </td>
+          <td>(</td>
+          <td class="paramtype">FriBidiCharType&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get bidi type name. </p>
+<p>This function returns the bidi type name of a character type. The returned string is a static string and should not be freed.</p>
+<p>The type names are the same as ones defined in Table 3.7 Bidirectional Character Types of the Unicode Bidirectional Algorithm available at <a href="http://www.unicode.org/reports/tr9/#Bidirectional_Character_Types,">http://www.unicode.org/reports/tr9/#Bidirectional_Character_Types,</a> with a few modifications: L-&gt;LTR, R-&gt;RTL, B-&gt;BS, S-&gt;SS.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>input bidi type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The bidi type name of a character type </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6d531af77bb6a3740e494c1148274c2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FRIBIDI_ENTRY void fribidi_get_bidi_types </td>
+          <td>(</td>
+          <td class="paramtype">const FriBidiChar *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FriBidiStrIndex&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FriBidiCharType *&#160;</td>
+          <td class="paramname"><em>btypes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get bidi types for an string of characters. </p>
+<p>This function finds the bidi types of an string of characters. See <a class="el" href="fribidi-bidi-types_8h.html#a8c278cd91ef9460aa7f91f1a334200cb" title="Get character bidi type. ">fribidi_get_bidi_type()</a> for more information about the bidi types returned by this function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>input string </td></tr>
+    <tr><td class="paramname">len</td><td>input string length </td></tr>
+    <tr><td class="paramname">btypes</td><td>output bidi types </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 12:42:10 for FriBidi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 13 2015 14:04:32 for FriBidi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

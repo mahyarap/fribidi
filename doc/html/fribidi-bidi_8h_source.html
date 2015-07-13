@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -132,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &quot;fribidi-types.h&quot;</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &quot;fribidi-flags.h&quot;</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;fribidi-bidi-types.h&quot;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fribidi-bidi-types_8h.html">fribidi-bidi-types.h</a>&quot;</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &quot;fribidi-begindecls.h&quot;</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
@@ -166,13 +167,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#include &quot;fribidi-enddecls.h&quot;</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !_FRIBIDI_BIDI_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="fribidi-bidi_8h_html_a1fb49156015c32c7eb4e3f57252076ee"><div class="ttname"><a href="fribidi-bidi_8h.html#a1fb49156015c32c7eb4e3f57252076ee">fribidi_reorder_line</a></div><div class="ttdeci">FRIBIDI_ENTRY FriBidiLevel fribidi_reorder_line(FriBidiFlags flags, const FriBidiCharType *bidi_types, const FriBidiStrIndex len, const FriBidiStrIndex off, const FriBidiParType base_dir, FriBidiLevel *embedding_levels, FriBidiChar *visual_str, FriBidiStrIndex *map) FRIBIDI_GNUC_WARN_UNUSED</div><div class="ttdoc">Reorder a line of logical string to visual. </div><div class="ttdef"><b>Definition:</b> fribidi-bidi.c:882</div></div>
-<div class="ttc" id="fribidi-bidi_8h_html_a36ce68baef8b058ddd6d30e689c25299"><div class="ttname"><a href="fribidi-bidi_8h.html#a36ce68baef8b058ddd6d30e689c25299">fribidi_get_par_direction</a></div><div class="ttdeci">FRIBIDI_ENTRY FriBidiParType fribidi_get_par_direction(const FriBidiCharType *bidi_types, const FriBidiStrIndex len)</div><div class="ttdoc">Get base paragraph direction. </div><div class="ttdef"><b>Definition:</b> fribidi-bidi.c:278</div></div>
-<div class="ttc" id="fribidi-bidi_8h_html_a9df43cff100877238408249d6d52f1a8"><div class="ttname"><a href="fribidi-bidi_8h.html#a9df43cff100877238408249d6d52f1a8">fribidi_get_par_embedding_levels</a></div><div class="ttdeci">FRIBIDI_ENTRY FriBidiLevel fribidi_get_par_embedding_levels(const FriBidiCharType *bidi_types, const FriBidiStrIndex len, FriBidiParType *pbase_dir, FriBidiLevel *embedding_levels) FRIBIDI_GNUC_WARN_UNUSED</div><div class="ttdoc">Get bidi embedding levels of a paragraph. </div><div class="ttdef"><b>Definition:</b> fribidi-bidi.c:294</div></div>
+<div class="ttc" id="fribidi-bidi_8h_html_a1fb49156015c32c7eb4e3f57252076ee"><div class="ttname"><a href="fribidi-bidi_8h.html#a1fb49156015c32c7eb4e3f57252076ee">fribidi_reorder_line</a></div><div class="ttdeci">FRIBIDI_ENTRY FriBidiLevel fribidi_reorder_line(FriBidiFlags flags, const FriBidiCharType *bidi_types, const FriBidiStrIndex len, const FriBidiStrIndex off, const FriBidiParType base_dir, FriBidiLevel *embedding_levels, FriBidiChar *visual_str, FriBidiStrIndex *map) FRIBIDI_GNUC_WARN_UNUSED</div><div class="ttdoc">Reorder a line of logical string to visual. </div></div>
+<div class="ttc" id="fribidi-bidi_8h_html_a36ce68baef8b058ddd6d30e689c25299"><div class="ttname"><a href="fribidi-bidi_8h.html#a36ce68baef8b058ddd6d30e689c25299">fribidi_get_par_direction</a></div><div class="ttdeci">FRIBIDI_ENTRY FriBidiParType fribidi_get_par_direction(const FriBidiCharType *bidi_types, const FriBidiStrIndex len)</div><div class="ttdoc">Get base paragraph direction. </div></div>
+<div class="ttc" id="fribidi-bidi-types_8h_html"><div class="ttname"><a href="fribidi-bidi-types_8h.html">fribidi-bidi-types.h</a></div><div class="ttdoc">Character bidi types. </div></div>
+<div class="ttc" id="fribidi-bidi_8h_html_a9df43cff100877238408249d6d52f1a8"><div class="ttname"><a href="fribidi-bidi_8h.html#a9df43cff100877238408249d6d52f1a8">fribidi_get_par_embedding_levels</a></div><div class="ttdeci">FRIBIDI_ENTRY FriBidiLevel fribidi_get_par_embedding_levels(const FriBidiCharType *bidi_types, const FriBidiStrIndex len, FriBidiParType *pbase_dir, FriBidiLevel *embedding_levels) FRIBIDI_GNUC_WARN_UNUSED</div><div class="ttdoc">Get bidi embedding levels of a paragraph. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 12:42:10 for FriBidi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 13 2015 14:12:17 for FriBidi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

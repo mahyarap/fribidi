@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &quot;fribidi-common.h&quot;</code><br/>
 <code>#include &quot;fribidi-types.h&quot;</code><br/>
 <code>#include &quot;fribidi-flags.h&quot;</code><br/>
-<code>#include &quot;fribidi-bidi-types.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="fribidi-bidi-types_8h_source.html">fribidi-bidi-types.h</a>&quot;</code><br/>
 <code>#include &quot;fribidi-begindecls.h&quot;</code><br/>
 <code>#include &quot;fribidi-enddecls.h&quot;</code><br/>
 </div>
@@ -164,7 +165,7 @@ Copyright (C) 1999,2000 Dov Grobgeld </dd></dl>
 <p>You typically do not need this function as <a class="el" href="fribidi-bidi_8h.html#a9df43cff100877238408249d6d52f1a8" title="Get bidi embedding levels of a paragraph. ">fribidi_get_par_embedding_levels()</a> knows how to compute base direction itself, but you may need this to implement a more sophisticated paragraph direction handling. Note that you can pass more than a paragraph to this function and the direction of the first non-neutral paragraph is returned, which is a very good heuristic to set direction of the neutral paragraphs at the beginning of text. For other neutral paragraphs, you better use the direction of the previous paragraph.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bidi_types</td><td>input list of bidi types as returned by fribidi_get_bidi_types() </td></tr>
+    <tr><td class="paramname">bidi_types</td><td>input list of bidi types as returned by <a class="el" href="fribidi-bidi-types_8h.html#a6d531af77bb6a3740e494c1148274c2e" title="Get bidi types for an string of characters. ">fribidi_get_bidi_types()</a> </td></tr>
     <tr><td class="paramname">len</td><td>input string length</td></tr>
   </table>
   </dd>
@@ -210,11 +211,11 @@ Copyright (C) 1999,2000 Dov Grobgeld </dd></dl>
 </div><div class="memdoc">
 
 <p>Get bidi embedding levels of a paragraph. </p>
-<p>This function finds the bidi embedding levels of a single paragraph, as defined by the Unicode Bidirectional Algorithm available at <a href="http://www.unicode.org/reports/tr9/">http://www.unicode.org/reports/tr9/</a>. This function implements rules P2 to I1 inclusive, and parts 1 to 3 of L1, except for rule X9 which is implemented in fribidi_remove_bidi_marks(). Part 4 of L1 is implemented in <a class="el" href="fribidi-bidi_8h.html#a1fb49156015c32c7eb4e3f57252076ee" title="Reorder a line of logical string to visual. ">fribidi_reorder_line()</a>.</p>
-<p>There are a few macros defined in <a class="el" href="fribidi-bidi-types_8h_source.html">fribidi-bidi-types.h</a> to work with this embedding levels.</p>
+<p>This function finds the bidi embedding levels of a single paragraph, as defined by the Unicode Bidirectional Algorithm available at <a href="http://www.unicode.org/reports/tr9/">http://www.unicode.org/reports/tr9/</a>. This function implements rules P2 to I1 inclusive, and parts 1 to 3 of L1, except for rule X9 which is implemented in <a class="el" href="fribidi-deprecated_8h.html#a15950bfb19c8312836efb43f7a5c751d">fribidi_remove_bidi_marks()</a>. Part 4 of L1 is implemented in <a class="el" href="fribidi-bidi_8h.html#a1fb49156015c32c7eb4e3f57252076ee" title="Reorder a line of logical string to visual. ">fribidi_reorder_line()</a>.</p>
+<p>There are a few macros defined in <a class="el" href="fribidi-bidi-types_8h.html" title="Character bidi types. ">fribidi-bidi-types.h</a> to work with this embedding levels.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bidi_types</td><td>input list of bidi types as returned by fribidi_get_bidi_types() </td></tr>
+    <tr><td class="paramname">bidi_types</td><td>input list of bidi types as returned by <a class="el" href="fribidi-bidi-types_8h.html#a6d531af77bb6a3740e494c1148274c2e" title="Get bidi types for an string of characters. ">fribidi_get_bidi_types()</a> </td></tr>
     <tr><td class="paramname">len</td><td>input string length of the paragraph </td></tr>
     <tr><td class="paramname">pbase_dir</td><td>requested and resolved paragraph base direction </td></tr>
     <tr><td class="paramname">embedding_levels</td><td>output list of embedding levels</td></tr>
@@ -294,7 +295,7 @@ Copyright (C) 1999,2000 Dov Grobgeld </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">flags</td><td>reorder flags </td></tr>
-    <tr><td class="paramname">bidi_types</td><td>input list of bidi types as returned by fribidi_get_bidi_types() </td></tr>
+    <tr><td class="paramname">bidi_types</td><td>input list of bidi types as returned by <a class="el" href="fribidi-bidi-types_8h.html#a6d531af77bb6a3740e494c1148274c2e" title="Get bidi types for an string of characters. ">fribidi_get_bidi_types()</a> </td></tr>
     <tr><td class="paramname">len</td><td>input length of the line </td></tr>
     <tr><td class="paramname">off</td><td>input offset of the beginning of the line in the paragraph </td></tr>
     <tr><td class="paramname">base_dir</td><td>resolved paragraph base direction </td></tr>
@@ -311,7 +312,7 @@ Copyright (C) 1999,2000 Dov Grobgeld </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 12:42:10 for FriBidi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 13 2015 14:12:17 for FriBidi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
