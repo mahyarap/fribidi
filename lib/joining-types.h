@@ -32,6 +32,15 @@
  *
  * For licensing issues, contact <license@farsiweb.info>.
  */
+
+/**
+ * @file joining-types.h
+ * @brief Define internal joining types
+ * @author Mahyar Abbaspour
+ * @author Copyright (C) 2001,2002 Behdad Esfahbod
+ * @author Copyright (C) 1999,2000 Dov Grobgeld
+ */
+
 #ifndef _JOINING_TYPES_H
 #define _JOINING_TYPES_H
 
@@ -46,10 +55,16 @@
 
 #define fribidi_char_from_joining_type                                         \
 	FRIBIDI_PRIVATESPACE(char_from_joining_type)
+/**
+ * @brief ??
+ *
+ * @param j input joining type
+ * @param visual in visual context or logical?
+ * @return ??
+ */
 char fribidi_char_from_joining_type(
-    FriBidiJoiningType j,  /* input joining type */
-    fribidi_boolean visual /* in visual context or logical? */
-    ) FRIBIDI_GNUC_HIDDEN;
+    FriBidiJoiningType j,
+    fribidi_boolean visual) FRIBIDI_GNUC_HIDDEN;
 
 #endif /* DEBUG */
 

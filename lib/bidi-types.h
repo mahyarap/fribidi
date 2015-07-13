@@ -32,6 +32,14 @@
  *
  * For licensing issues, contact <license@farsiweb.info>.
  */
+
+/**
+ * @file bidi-types.h
+ * @brief Define internal bidi types
+ * @author Mahyar Abbaspour
+ * @author Copyright (C) 2004 Behdad Esfahbod
+ */
+
 #ifndef _BIDI_TYPES_H
 #define _BIDI_TYPES_H
 
@@ -48,8 +56,7 @@
 #if DEBUG + 0
 
 #define fribidi_char_from_bidi_type FRIBIDI_PRIVATESPACE(char_from_bidi_type)
-char fribidi_char_from_bidi_type(FriBidiCharType t /* input bidi type */
-				 ) FRIBIDI_GNUC_HIDDEN;
+char fribidi_char_from_bidi_type(FriBidiCharType t) FRIBIDI_GNUC_HIDDEN;
 
 #endif /* DEBUG */
 

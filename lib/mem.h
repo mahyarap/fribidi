@@ -31,6 +31,15 @@
  *
  * For licensing issues, contact <license@farsiweb.info>.
  */
+
+/**
+ * @file mem.h
+ * @brief Memory manipulation routines
+ * @author Mahyar Abbaspour
+ * @author Copyright (C) 2001,2002 Behdad Esfahbod
+ * @author Copyright (C) 1999,2000 Dov Grobgeld
+ */
+
 #ifndef _MEM_H
 #define _MEM_H
 
@@ -59,15 +68,38 @@ typedef struct _FriBidiMemChunk FriBidiMemChunk;
 #define FRIBIDI_ALLOC_ONLY 1
 
 #define fribidi_mem_chunk_new FRIBIDI_PRIVATESPACE(mem_chunk_new)
-FriBidiMemChunk *fribidi_mem_chunk_new(const char *name, int atom_size,
-				       unsigned long area_size, int alloc_type)
+/**
+ * @brief
+ *
+ * @param name 
+ * @param atom_size 
+ * @param area_size 
+ * @param alloc_type 
+ * @return 
+ */
+FriBidiMemChunk *fribidi_mem_chunk_new(
+		const char *name,
+		int atom_size,
+		unsigned long area_size,
+		int alloc_type)
     FRIBIDI_GNUC_HIDDEN FRIBIDI_GNUC_MALLOC FRIBIDI_GNUC_WARN_UNUSED;
 
 #define fribidi_mem_chunk_alloc FRIBIDI_PRIVATESPACE(mem_chunk_alloc)
+/**
+ * @brief
+ *
+ * @param mem_chunk 
+ * @return
+ */
 void *fribidi_mem_chunk_alloc(FriBidiMemChunk *mem_chunk)
     FRIBIDI_GNUC_HIDDEN FRIBIDI_GNUC_MALLOC FRIBIDI_GNUC_WARN_UNUSED;
 
 #define fribidi_mem_chunk_destroy FRIBIDI_PRIVATESPACE(mem_chunk_destroy)
+/**
+ * @brief
+ *
+ * @param mem_chunk 
+ */
 void fribidi_mem_chunk_destroy(FriBidiMemChunk *mem_chunk) FRIBIDI_GNUC_HIDDEN;
 
 #endif /* !FRIBIDI_USE_GLIB */

@@ -33,6 +33,15 @@
  *
  * For licensing issues, contact <license@farsiweb.info>.
  */
+
+/**
+ * @file run.h
+ * @brief Text run data type
+ * @author Mahyar Abbaspour
+ * @author Copyright (C) 2001,2002 Behdad Esfahbod
+ * @author Copyright (C) 1999,2000 Dov Grobgeld
+ */
+
 #ifndef _RUN_H
 #define _RUN_H
 
@@ -46,7 +55,6 @@
 #include <fribidi-begindecls.h>
 
 typedef struct _FriBidiRunStruct FriBidiRun;
-
 struct _FriBidiRunStruct
 {
 	FriBidiRun *prev;

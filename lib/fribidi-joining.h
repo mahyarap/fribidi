@@ -32,6 +32,14 @@
  *
  * For licensing issues, contact <license@farsiweb.info>.
  */
+
+/**
+ * @file fribidi-joining.h
+ * @brief Arabic joining algorithm
+ * @author Mahyar Abbaspour
+ * @author Copyright (C) 2004 Behdad Esfahbod
+ */
+
 #ifndef _FRIBIDI_JOINING_H
 #define _FRIBIDI_JOINING_H
 
@@ -44,7 +52,8 @@
 #include "fribidi-begindecls.h"
 
 #define fribidi_join_arabic FRIBIDI_NAMESPACE(join_arabic)
-/* fribidi_join_arabic - do Arabic joining
+/** 
+ * @brief Do Arabic joining
  *
  * This function does the Arabic joining algorithm.  Means, given Arabic
  * joining types of the characters in ar_props (don't worry,
@@ -61,6 +70,14 @@
  *
  * There are a few macros defined in fribidi-joining-types.h for querying the
  * Arabic properties computed by this function.
+ *
+ * @param bidi_types input list of bidi types as returned by
+					 fribidi_get_bidi_types()
+ * @param len input string length
+ * @param  embedding_levels input list of embedding levels, as returned by
+		  fribidi_get_par_embedding_levels()
+ * @param ar_props Arabic properties to analyze, initilized by joining types, 
+ *        as returned by fribidi_get_joining_types()
  */
 FRIBIDI_ENTRY void fribidi_join_arabic(
     const FriBidiCharType *bidi_types, /* input list of bidi types as

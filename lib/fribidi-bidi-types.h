@@ -32,6 +32,14 @@
  *
  * For licensing issues, contact <license@farsiweb.info>.
  */
+
+/**
+ * @file fribidi-bidi-types.h
+ * @brief Character bidi types
+ * @author Mahyar Abbaspour
+ * @author Copyright (C) 2001,2002,2004 Behdad Esfahbod
+ */
+
 #ifndef _FRIBIDI_BIDI_TYPES_H
 #define _FRIBIDI_BIDI_TYPES_H
 
@@ -336,7 +344,8 @@ typedef fribidi_uint32 FriBidiParType;
 /* Functions finally */
 
 #define fribidi_get_bidi_type FRIBIDI_NAMESPACE(get_bidi_type)
-/* fribidi_get_bidi_type - get character bidi type
+/**
+ * @brief Get character bidi type
  *
  * This function returns the bidi type of a character as defined in Table 3.7
  * Bidirectional Character Types of the Unicode Bidirectional Algorithm
@@ -347,26 +356,34 @@ typedef fribidi_uint32 FriBidiParType;
  *
  * There are a few macros defined in fribidi-bidi-types.h for querying a bidi
  * type.
+ *
+ * @param ch input character
+ * @return The bidi type of a character
  */
 FRIBIDI_ENTRY FriBidiCharType
-fribidi_get_bidi_type(FriBidiChar ch /* input character */
-		      ) FRIBIDI_GNUC_CONST;
+fribidi_get_bidi_type(FriBidiChar ch) FRIBIDI_GNUC_CONST;
 
 #define fribidi_get_bidi_types FRIBIDI_NAMESPACE(get_bidi_types)
-/* fribidi_get_bidi_types - get bidi types for an string of characters
+/**
+ * @brief Get bidi types for an string of characters
  *
- * This function finds the bidi types of an string of characters.  See
+ * This function finds the bidi types of an string of characters. See
  * fribidi_get_bidi_type() for more information about the bidi types returned
  * by this function.
+ *
+ * @param str input string
+ * @param len input string length
+ * @param btypes output bidi types
  */
 FRIBIDI_ENTRY void
-fribidi_get_bidi_types(const FriBidiChar *str,    /* input string */
-		       const FriBidiStrIndex len, /* input string length */
-		       FriBidiCharType *btypes    /* output bidi types */
-		       );
+fribidi_get_bidi_types(
+		const FriBidiChar *str,
+		const FriBidiStrIndex len,
+		FriBidiCharType *btypes);
 
 #define fribidi_get_bidi_type_name FRIBIDI_NAMESPACE(get_bidi_type_name)
-/* fribidi_get_bidi_type_name - get bidi type name
+/** 
+ * @brief Get bidi type name
  *
  * This function returns the bidi type name of a character type.  The
  * returned string is a static string and should not be freed.
@@ -375,10 +392,12 @@ fribidi_get_bidi_types(const FriBidiChar *str,    /* input string */
  * Character Types of the Unicode Bidirectional Algorithm available at
  * http://www.unicode.org/reports/tr9/#Bidirectional_Character_Types, with a
  * few modifications: L->LTR, R->RTL, B->BS, S->SS.
+ *
+ * @param t input bidi type
+ * @return The bidi type name of a character type
  */
 FRIBIDI_ENTRY const char *
-fribidi_get_bidi_type_name(FriBidiCharType t /* input bidi type */
-			   ) FRIBIDI_GNUC_CONST;
+fribidi_get_bidi_type_name(FriBidiCharType t) FRIBIDI_GNUC_CONST;
 
 #include "fribidi-enddecls.h"
 

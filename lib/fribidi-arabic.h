@@ -32,6 +32,14 @@
  * Author(s):
  *   Behdad Esfahbod, 2005
  */
+
+/**
+ * @file fribidi-arabic.h
+ * @brief Do Arabic shaping to presentation forms
+ * @author Mahyar Abbaspour
+ * @author Copyright (C) 2005 Behdad Esfahbod
+ */
+
 #ifndef _FRIBIDI_ARABIC_H
 #define _FRIBIDI_ARABIC_H
 
@@ -45,7 +53,8 @@
 #include "fribidi-begindecls.h"
 
 #define fribidi_shape_arabic FRIBIDI_NAMESPACE(shape_arabic)
-/* fribidi_shape_arabic - do Arabic shaping
+/** 
+ * @brief Do Arabic shaping
  *
  * The actual shaping that is done depends on the flags set.  Only flags
  * starting with FRIBIDI_FLAG_SHAPE_ARAB_ affect this function.
@@ -64,15 +73,20 @@
  * cases, but the rest are recommended in any enviroment that doesn't have
  * other means for doing Arabic shaping.  The set of extra flags that enable
  * this level of Arabic support has a shortcut named FRIBIDI_FLAGS_ARABIC.
+ *
+ * @param flags shaping flags
+ * @param embedding_levels ??
+ * @param len input string length
+ * @param ar_props input/output Arabic properties as computed by 
+ *        fribidi_join_arabic()
+ * @param str string to shape
  */
 FRIBIDI_ENTRY void fribidi_shape_arabic(
-    FriBidiFlags flags, /* shaping flags */
+    FriBidiFlags flags,
     const FriBidiLevel *embedding_levels,
-    const FriBidiStrIndex len,   /* input string length */
-    FriBidiArabicProp *ar_props, /* input/output Arabic properties as
-				  * computed by fribidi_join_arabic */
-    FriBidiChar *str /* string to shape */
-    );
+    const FriBidiStrIndex len,
+    FriBidiArabicProp *ar_props,
+    FriBidiChar *str);
 
 #include "fribidi-enddecls.h"
 

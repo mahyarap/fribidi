@@ -32,6 +32,14 @@
  *
  * For licensing issues, contact <license@farsiweb.info>.
  */
+
+/**
+ * @file fribidi-shape.h
+ * @brief Shaping
+ * @author Mahyar Abbaspour
+ * @author Copyright (C) 2004,2005 Behdad Esfahbod
+ */
+
 #ifndef _FRIBIDI_SHAPE_H
 #define _FRIBIDI_SHAPE_H
 
@@ -43,7 +51,8 @@
 #include "fribidi-begindecls.h"
 
 #define fribidi_shape FRIBIDI_NAMESPACE(shape)
-/* fribidi_shape - do bidi-aware shaping
+/** 
+ * @brief Do bidi-aware shaping
  *
  * This function does all shaping work that depends on the resolved embedding
  * levels of the characters.  Currently it does mirroring and Arabic shaping,
@@ -58,17 +67,21 @@
  *
  * Feel free to do your own shaping before or after calling this function,
  * but you should take care of embedding levels yourself then.
+ *
+ * @param flags shaping flags
+ * @param embedding_levels input list of embedding levels, as returned by
+          fribidi_get_par_embedding_levels()
+ * @param len input string length
+ * @param ar_props input/output Arabic properties as computed by 
+ *        fribidi_join_arabic()
+ * @param str srting to shape
  */
 FRIBIDI_ENTRY void fribidi_shape(
-    FriBidiFlags flags,			  /* shaping flags */
-    const FriBidiLevel *embedding_levels, /* input list of embedding
-					     levels, as returned by
-					     fribidi_get_par_embedding_levels */
-    const FriBidiStrIndex len,   /* input string length */
-    FriBidiArabicProp *ar_props, /* input/output Arabic properties as
-					 * computed by fribidi_join_arabic */
-    FriBidiChar *str /* string to shape */
-    );
+    FriBidiFlags flags,
+    const FriBidiLevel *embedding_levels,
+    const FriBidiStrIndex len,
+    FriBidiArabicProp *ar_props,
+    FriBidiChar *str);
 
 #include "fribidi-enddecls.h"
 

@@ -35,6 +35,15 @@
  *   Behdad Esfahbod, 2001, 2002, 2004
  *   Dov Grobgeld, 1999, 2000
  */
+
+/**
+ * @file fribidi-mirroring.h
+ * @brief Get mirrored character
+ * @author Mahyar Abbaspour
+ * @author Copyright (C) 2001,2002,2004 Behdad Esfahbod
+ * @author Copyright (C) 1999,2000 Dov Grobgeld
+ */
+
 #ifndef _FRIBIDI_MIRRORING_H
 #define _FRIBIDI_MIRRORING_H
 
@@ -46,7 +55,8 @@
 #include "fribidi-begindecls.h"
 
 #define fribidi_get_mirror_char FRIBIDI_NAMESPACE(get_mirror_char)
-/* fribidi_get_mirror_char - get mirrored character
+/** 
+ * @breif Get mirrored character
  *
  * This function finds the mirrored equivalent of a character as defined in
  * the file BidiMirroring.txt of the Unicode Character Database available at
@@ -57,15 +67,16 @@
  * character is put in the output, otherwise the input character itself is
  * put.
  *
- * Returns: if the character has a mirroring equivalent or not.
+ * @param ch input character
+ * @param mirrored_ch output mirrored character
+ * @return If the character has a mirroring equivalent or not.
  */
 FRIBIDI_ENTRY fribidi_boolean
-fribidi_get_mirror_char(FriBidiChar ch,		 /* input character */
-			FriBidiChar *mirrored_ch /* output mirrored character */
-			);
+fribidi_get_mirror_char(FriBidiChar ch, FriBidiChar *mirrored_ch);
 
 #define fribidi_shape_mirroring FRIBIDI_NAMESPACE(shape_mirroring)
-/* fribidi_shape_mirroring - do mirroring shaping
+/** 
+ * @brief Do mirroring shaping
  *
  * This functions replaces mirroring characters on right-to-left embeddings in
  * string with their mirrored equivalent as returned by
@@ -73,14 +84,16 @@ fribidi_get_mirror_char(FriBidiChar ch,		 /* input character */
  *
  * This function implements rule L4 of the Unicode Bidirectional Algorithm
  * available at http://www.unicode.org/reports/tr9/#L4.
+ *
+ * @param embedding_levels input list of embedding levels, as returned by
+          fribidi_get_par_embedding_levels
+ * @param len input string length
+ * @param str string to shape
  */
 FRIBIDI_ENTRY void fribidi_shape_mirroring(
-    const FriBidiLevel *embedding_levels, /* input list of embedding
-					     levels, as returned by
-					     fribidi_get_par_embedding_levels */
-    const FriBidiStrIndex len, /* input string length */
-    FriBidiChar *str	   /* string to shape */
-    );
+    const FriBidiLevel *embedding_levels,    
+	const FriBidiStrIndex len,
+    FriBidiChar *str);
 
 #include "fribidi-enddecls.h"
 
